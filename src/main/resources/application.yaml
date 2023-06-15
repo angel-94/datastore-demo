@@ -1,0 +1,23 @@
+server:
+  port: 9999
+spring:
+  output:
+    ansi:
+      enabled: always
+  cloud:
+    gcp:
+      config:
+        credentials:
+          encodedKey: ""
+          location: ""
+          scopes:
+            - datastore
+      datastore:
+        namespace: demo-mars
+        project-id: fabrica-digital-278818
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
+  application:
+    name: persistence-demo
